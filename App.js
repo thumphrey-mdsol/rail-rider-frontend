@@ -1,16 +1,14 @@
 import React from 'react';
 import { StyleSheet, Text, View, StatusBar } from 'react-native';
-import Login from './src/screens/Login';
-import SignUp from './src/screens/SignUp';
+// import Login from './src/screens/Login';
+// import Signup from './src/screens/SignUp';
+// import MyStations from './src/screens/MyStations';
+import AppNavigator from './src/navigator/AppNavigator';
 
 export default function App() {
   return (
     
-    <View style={styles.container}>
-      <StatusBar backgroundColor="1c313a" barStyle="light-content"/>
-      <Login />
-    </View>
-
+    <AppNavigator/>
   );
 }
 

@@ -1,22 +1,23 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React, {useState, useEffect} from 'react';
+import { StyleSheet, Text, View, ScrollView } from 'react-native';
 import Logo from '../components/Logo';
-import SignupForm from '../components/SignupForm';
+import LoginForm from '../components/LoginForm';
 
 
-export default function Signup(props) {
-  return (
+export default function Login() {
+    const [favorites, setFavorites] = useState([])
     
-    <View style={styles.container}>
-      <Logo />
-      <SignupForm />
-      
-      <View style={styles.signupTextContainer}>
-  <Text style={styles.signupText}> {props.route.params.name} Already have an account?</Text>
-          <Text style={styles.signupButton}> Login </Text>
-
-      </View>
-    </View>
+    // const useEffect 
+    
+    const renderFavorites = () => {
+    
+    }
+    
+    return (
+    
+    <ScrollView>
+      {renderFavorites}
+    </ScrollView>
 
   );
 }

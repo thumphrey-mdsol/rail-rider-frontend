@@ -4,7 +4,7 @@ import Logo from '../components/Logo';
 import LoginForm from '../components/LoginForm';
 
 
-export default function Login() {
+export default function Login(props) {
   return (
     
     <View style={styles.container}>
@@ -12,7 +12,7 @@ export default function Login() {
       <LoginForm />
       <View style={styles.signupTextContainer}>
           <Text style={styles.signupText}>Don't have an account yet?</Text>
-          <Text style={styles.signupButton}> Signup </Text>
+          <Text style={styles.signupButton} onPress={()=> props.navigation.push('Signup', {name: 'tom'})}> Signup </Text>
 
       </View>
     </View>
